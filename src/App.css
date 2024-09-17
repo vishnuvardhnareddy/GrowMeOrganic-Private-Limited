@@ -1,0 +1,112 @@
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+.table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 15px;
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+}
+
+.table th, .table td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.table th {
+  background-color: #007bff;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.table td {
+  background-color: #ffffff;
+  border: thin solid #dddddd;
+}
+
+/* Status Labels Styling */
+.status-label {
+  padding: 5px 10px;
+  color: #ffffff;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.fulfilled {
+  background-color: #28a745; /* Green for fulfilled */
+}
+
+.confirmed {
+  background-color: #17a2b8; /* Teal for confirmed */
+}
+
+.partially-shipped {
+  background-color: #ffc107; /* Yellow for partially shipped */
+}
+
+.checkbox {
+  margin-right: 10px; /* Align checkboxes */
+}
+
+/* Header Controls */
+.table-header-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Pagination Styling */
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.pagination button {
+  margin: 0 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.pagination .active button {
+  font-weight: bold;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+  .table-header-controls, .pagination {
+    flex-direction: column;
+  }
+}
+
+.box {
+  position: absolute;
+  top: 50px; /* Adjust the position as needed */
+  left: 0;   /* Adjust as needed, you can also use right, bottom */
+  background-color: #f9fbfd; /* White background for the box */
+  padding: 10px;
+  border: 1px solid #333; /* Dark gray border */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensure it's above other elements */
+  width: 200px; /* Set a width for better layout */
+  color: #1a1a1a; /* Dark text inside the box */
+}
+
+.rotate {
+  transform: rotate(180deg); /* Rotates the icon */
+}
